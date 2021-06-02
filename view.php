@@ -15,15 +15,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Version details for the simpleportfolio block.
+ * A view page for simpleportfolio block.
  *
  * @package    block_simpleportfolio
  * @copyright  David OC <davidherzlos@gmail.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die();
-
-$plugin->version   = 2020110904;              // The current plugin version (Date: YYYYMMDDXX).
-$plugin->requires  = 2020110300;              // Requires this Moodle version.
-$plugin->component = 'block_simpleportfolio'; // Full name of the plugin (used for diagnostics).
+require(__DIR__ . '../../../config.php');
