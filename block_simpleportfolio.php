@@ -38,7 +38,7 @@ class block_simpleportfolio extends block_base {
     /**
      * Init.
      */
-    public function init() {
+    public function init(): void {
         $this->title = get_string('pluginname', 'block_simpleportfolio');
     }
 
@@ -47,7 +47,7 @@ class block_simpleportfolio extends block_base {
      *
      * @return stdClass contents of block
      */
-    public function get_content() {
+    public function get_content(): stdClass {
 
         if (isset($this->content)) {
             return $this->content;
@@ -70,7 +70,7 @@ class block_simpleportfolio extends block_base {
      * Returns true if the block WILL USE per-instance configuration
      * @return boolean
      */
-    public function instance_allow_multiple() {
+    public function instance_allow_multiple(): bool {
         return true;
     }
 }

@@ -29,7 +29,7 @@ defined('MOODLE_INTERNAL') || die();
  *
  * @param navigation_node $frontpage Front page node in the navigation tree.
  */
-function block_simpleportfolio_extend_navigation_frontpage(navigation_node $frontpage) {
+function block_simpleportfolio_extend_navigation_frontpage(navigation_node $frontpage): void {
     $frontpage->add(
         get_string('blocksadminpage', 'block_simpleportfolio'),
         new moodle_url('/admin/blocks.php')

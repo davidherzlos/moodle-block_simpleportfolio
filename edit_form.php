@@ -39,7 +39,7 @@ class block_simpleportfolio_edit_form extends block_edit_form {
      * @param  MoodleQuickForm $mform
      * @return void
      */
-    protected function specific_definition($mform) {
+    protected function specific_definition($mform): void {
         $mform->addElement('header', 'config_header', get_string('header', 'block_simpleportfolio'));
         $mform->addElement('text', 'config_sometext', get_string('sometext', 'block_simpleportfolio'));
         $mform->setType('config_sometext', PARAM_TEXT);

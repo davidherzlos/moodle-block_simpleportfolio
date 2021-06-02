@@ -44,7 +44,7 @@ class main_widget implements renderable, templatable {
      *
      * @throws \dml_exception
      */
-    public function __construct($data) {
+    public function __construct(string $data) {
         $this->data = $data;
     }
 
@@ -56,7 +56,7 @@ class main_widget implements renderable, templatable {
      * @throws \coding_exception
      *
      */
-    public function export_for_template(renderer_base $output) {
+    public function export_for_template(renderer_base $output): array {
         return ['sometext' => $this->data];
     }
 }

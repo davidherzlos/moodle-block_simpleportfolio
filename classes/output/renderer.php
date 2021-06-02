@@ -43,7 +43,7 @@ class renderer extends plugin_renderer_base {
      * @param  renderable $main The main renderable
      * @return string HTML string
      */
-    protected function render_main_widget(renderable $main) {
+    protected function render_main_widget(renderable $main): string {
         return $this->render_from_template(
             'block_simpleportfolio/main_widget', $main->export_for_template($this)
         );
